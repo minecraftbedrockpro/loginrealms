@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Realms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Redes Sociais -->
+<div class="social-links">
+    <a href="https://discord.com" target="_blank">
+        <img src="dc.png" alt="Discord" class="social-icon">
+    </a>
+    <a href="https://youtube.com" target="_blank">
+        <img src="yt.png" alt="YouTube" class="social-icon">
+    </a>
+</div>
+
+<!-- Tela de Login -->
+<div class="login-container" id="loginContainer">
+    <h2>Login Realms</h2>
+    <input type="text" id="gamertag" placeholder="Gamertag">
+    <input type="password" id="password" placeholder="Senha">
+    <button onclick="login()">Entrar</button>
+    <p id="loginStatus"></p>
+</div>
+
+<!-- Conteúdo Protegido -->
+<div id="conteudoProtegido" style="display: none;">
+    <h2 id="welcomeMessage"></h2>
+    <div class="main-content">
+        <button onclick="connectToRealms()">Entrar no Realms</button>
+        <button onclick="copyCode()">Copiar Código</button>
+        <p id="copiedMessage" style="display: none;">Código copiado!</p>
+    </div>
+</div>
+
+
+<!-- Canvas para os efeitos -->
+<canvas id="canvas1"></canvas>
+<canvas id="canvas2"></canvas>
+<canvas id="canvas3"></canvas>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;  /* Adiciona fundo preto */
+    color: white;  /* Cor do texto em branco para contraste */
+}
+
+/* Redes sociais */
+.social-links {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+/* Estilo do login */
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(17, 17, 17, 0.7);  /* Fundo escuro para o login */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+input {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#loginStatus {
+    margin-top: 20px;
+}
+
+/* Conteúdo protegido */
+#conteudoProtegido {
+    text-align: center;
+    background-color: rgba(22, 21, 21, 0.7);  /* Fundo escuro para o conteúdo */
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+textarea {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    resize: none;
+}
+
+/* Efeitos de fundo */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* Para garantir que o conteúdo esteja visível sobre os efeitos */
+#loginContainer, #conteudoProtegido {
+    z-index: 10;
+}
+
+/* Canvas para o efeito de relâmpagos */
+#lightningCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;  /* O canvas fica atrás de todo o conteúdo */
+    width: 100%;
+    height: 100%;
+}
+/* Impede seleção de texto no site inteiro */
+* {
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+}
+
+/* Impede o botão direito */
+img {
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+    pointer-events: none; /* Impede clique na imagem */
+}
+
+.social-links a {
+    display: inline-block;
+}
+
+/* Remove sublinhado e define cor normal para links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    display: block;
+}

@@ -1,0 +1,21 @@
+name: Atualizar Login
+on:
+  workflow_dispatch:
+
+jobs:
+  atualizar-login:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Criar arquivo de logins
+        run: |
+          echo '${{ secrets.LOGIN_CREDENTIALS }}' > login.json
+
+      - name: Commit e push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add login.json
+          git commit -m "Atualizando login.json a partir dos secrets"
+          git push

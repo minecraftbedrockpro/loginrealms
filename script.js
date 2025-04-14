@@ -1,7 +1,7 @@
 const users = {
-    "ProdigioMana": { password: "senha123", color: "#3498db", message: "Bem-vindo, ProdigioMana!" },
-    "MinecraftUser": { password: "123456", color: "#e74c3c", message: "Olá, MinecraftUser!" },
-    "OutroUser": { password: "abc321", color: "#f39c12", message: "Bem-vindo, OutroUser!" }
+    "nome1": { password: "senha", color: "#3498db", message: "Olá nome1!" },
+    "nome2": { password: "senha", color: "#e74c3c", message: "Olá nome2!" },
+    "nome3": { password: "senha", color: "#f39c12", message: "Olá nome3!" }
 };
 
 var canvas1 = document.getElementById("canvas1");

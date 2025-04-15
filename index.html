@@ -20,7 +20,7 @@
 <!-- Tela de Login -->
 <div class="login-container" id="loginContainer">
     <h2>Login Realms</h2>
-    <input type="text" id="gamertag" placeholder="Gamertag">
+    <input type="text" id="gamertag" placeholder="Nome da Série">
     <input type="password" id="password" placeholder="Senha">
     <button onclick="login()">Entrar</button>
     <p id="loginStatus"></p>
@@ -30,19 +30,20 @@
 <div id="conteudoProtegido" style="display: none;">
     <h2 id="welcomeMessage"></h2>
     <div class="main-content">
-        <button onclick="connectToRealms()">Entrar no Realms</button>
+        <p id="realmsMessage"></p>
+        <button id="enterRealmButton" onclick="connectToRealm()">Entrar no Realm</button>
         <button onclick="copyCode()">Copiar Código</button>
         <p id="copiedMessage" style="display: none;">Código copiado!</p>
     </div>
 </div>
-
 
 <!-- Canvas para os efeitos -->
 <canvas id="canvas1"></canvas>
 <canvas id="canvas2"></canvas>
 <canvas id="canvas3"></canvas>
 
-<script src="script.js"></script>
+<script src="login.js"></script>
+<script src="efeitos.js"></script>
 
 </body>
 </html>

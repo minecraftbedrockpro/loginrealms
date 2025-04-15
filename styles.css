@@ -74,6 +74,7 @@ button:hover {
     display: none;
 }
 
+/* Estilo para a área de entrada de código */
 textarea {
     width: 100%;
     height: 50px;
@@ -106,6 +107,7 @@ canvas {
     width: 100%;
     height: 100%;
 }
+
 /* Impede seleção de texto no site inteiro */
 * {
     user-select: none;
@@ -130,6 +132,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 .social-icon {
     width: 40px;
     height: 40px;

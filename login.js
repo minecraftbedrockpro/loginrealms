@@ -26,7 +26,7 @@ function login() {
                     realmLink = 'minecraft://acceptRealmInvite?inviteID=gQqV3ETZqXQwvEU'; // Alterar para código correto do Realm 2b2t
                     realmMessage = "Você está no Realm 2b2t!";
                 } else if (gamertag === "Conflitos") {
-                    realmLink = 'linkk'; // Alterar para código correto do Realm Conflitos
+                    realmLink = 'minecraft://acceptRealmInvite?inviteID=Tpc7VVt4vNoRJfg'; // Alterar para código correto do Realm Conflitos
                     realmMessage = "Você está no Realm Conflitos!";
                 }
 
@@ -55,7 +55,7 @@ function copyCode() {
     if (gamertag === "2b2t") {
         codeToCopy = 'gQqV3ETZqXQwvEU'; // Alterar para código correto do Realm 2b2t
     } else if (gamertag === "Conflitos") {
-        codeToCopy = 'codigo'; // Alterar para código correto do Realm Conflitos
+        codeToCopy = 'Tpc7VVt4vNoRJfg'; // Alterar para código correto do Realm Conflitos
     }
 
     // Cria um elemento temporário para copiar o código

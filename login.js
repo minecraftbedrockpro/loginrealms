@@ -5,7 +5,7 @@ function login() {
     // Codigos de senha dos Realms
     const realms = {
         "2b2t": "15/04/20:00",   // Senha para o Realm 2b2t
-        "Conflitos": "16/04/13:00" // Senha para o Realm Conflitos
+        "Reinos": "20/04/13:00" // Senha para o Realm Reinos Em Conflitos
     };
 
     // Verifica se a senha corresponde ao código correto do Realm
@@ -25,9 +25,9 @@ function login() {
                 if (gamertag === "2b2t") {
                     realmLink = 'minecraft://acceptRealmInvite?inviteID=gQqV3ETZqXQwvEU'; // Alterar para código correto do Realm 2b2t
                     realmMessage = "Você está no Realm 2b2t!";
-                } else if (gamertag === "Conflitos") {
+                } else if (gamertag === "Reinos") {
                     realmLink = 'minecraft://acceptRealmInvite?inviteID=Tpc7VVt4vNoRJfg'; // Alterar para código correto do Realm Conflitos
-                    realmMessage = "Você está no Realm Conflitos!";
+                    realmMessage = "Você está no Realm Reinos Em Conflitos!";
                 }
 
                 // Exibe a mensagem do Realm

@@ -35,12 +35,14 @@ body {
     color: white;
 }
 
+/* Ajuste de inputs e botões */
 input {
     width: 200px;
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    font-size: 16px;
 }
 
 button {
@@ -138,4 +140,60 @@ a {
     height: 40px;
     margin: 5px;
     display: block;
+}
+
+/* Logo do Realm */
+.realm-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Nome da série */
+#serieNome {
+    margin: 10px 0 5px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 600px) {
+    .login-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input, button {
+        width: 100%;  /* Ajusta os inputs e botões para ficarem mais largos no mobile */
+        font-size: 14px;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+
+    textarea {
+        font-size: 14px;
+    }
+
+    .social-links {
+        top: 10px;
+        right: 10px;
+    }
+
+    .social-icon {
+        width: 35px;
+        height: 35px;
+        margin: 3px;
+    }
+
+    /* Ajusta a logo do Realm */
+    .realm-logo {
+        width: 100px;
+    }
+
+    /* Ajusta o tamanho do nome da série */
+    #serieNome {
+        font-size: 18px;
+    }
 }
